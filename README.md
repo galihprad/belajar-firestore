@@ -14,7 +14,7 @@ db.collection('cafe').get().then((snapshot)=>{
 
 
 #### Add Data
-```javaScript
+```JavaScript
 form.addEventListener('submit',(e)=>{
 	e.preventDefault();
 	db.collection('cafe').add({
@@ -26,3 +26,9 @@ form.addEventListener('submit',(e)=>{
 	form.lokasi.value='';
 })
 ```
+
+#### Delete data
+```JavaScript
+db.collection('cafe').doc(id).delete();
+```
+
